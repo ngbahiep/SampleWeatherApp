@@ -257,9 +257,9 @@
 				2D0034D7249286FA00A541F5 /* Model */,
 				2D0034D6249286EA00A541F5 /* ViewModel */,
 				2D0034D5249286E100A541F5 /* View */,
+				2DCCE6062494C63A00421745 /* Controllers */,
 				2D15B0FA24913EA300AB8DEA /* AppDelegate.swift */,
 				2D15B0FC24913EA300AB8DEA /* SceneDelegate.swift */,
-				2D15B0FE24913EA300AB8DEA /* ViewController.swift */,
 				2D15B10024913EA300AB8DEA /* Main.storyboard */,
 				2D15B10324913EA500AB8DEA /* Assets.xcassets */,
 				2D15B10524913EA500AB8DEA /* LaunchScreen.storyboard */,
@@ -285,6 +285,14 @@
 				2D15B11E24913EA500AB8DEA /* Info.plist */,
 			);
 			path = SampleWeatherAppUITests;
+			sourceTree = "<group>";
+		};
+		2DCCE6062494C63A00421745 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2D15B0FE24913EA300AB8DEA /* ViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		2DFE1B7024947B8B00ACAFF9 /* ThirdParty */ = {
