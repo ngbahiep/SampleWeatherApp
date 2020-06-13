@@ -39,13 +39,11 @@ git submodule add https://github.com/Alamofire/Alamofire.git
 ## Check list of items the candidate has done.
 I have done all the requirements of Problem Statement:
 - Programming language: Swift
-- Retrieve the weather information from OpenWeatherMaps API.
-- Allow user to input the searching term.
-- Proceed searching with a condition of the search term length must be from 3 characters or above.
-- Render the searched results as a list of weather items.
-- Support caching mechanism so as to prevent the app from generating a bunch of API requests.
-- Manage caching mechanism & lifecycle.
-- Handle failures.
-- Support the disability to scale large text for who can't see the text clearly.
-- Support the disability to read out the text using VoiceOver controls.
-
+- Design app's architecture: MVVM
+- UI looks like in attachment.
+- Write Unit Tests
+- Acceptance Tests
+- Exception handling
+- Caching handling
+- Accessibility for Disability Supports: Voice over and scaling text.
+- Read me
