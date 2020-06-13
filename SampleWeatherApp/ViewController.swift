@@ -21,11 +21,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.title = NSLocalizedString("app_name", comment: "")
+        
         // configure UISearchController
         searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false
         searchController.searchBar.accessibilityIdentifier = "searchBar"
         searchController.searchBar.isAccessibilityElement = true
+        searchController.searchBar.accessibilityTraits = .searchField
+        searchController.searchBar.accessibilityLabel = "Search"
         
         // Add search controller to navigation item
         navigationItem.searchController = searchController

@@ -21,24 +21,24 @@ public class WeatherViewModel {
         let dateFormatter = DateFormatter()
         dateFormatter.locale = NSLocale.current
         dateFormatter.dateFormat = "EEE, dd MMM yyyy"
-        return "Date: " + dateFormatter.string(from: date)
+        return NSLocalizedString("date", comment: "") + dateFormatter.string(from: date)
     }
     
     var averageTemp: String {
         let avarageTemp = (weatherItem.temp.max + weatherItem.temp.min) / 2
-        return "Avarage Temperature: " + String(Int(avarageTemp)) + "°C"
+        return NSLocalizedString("avarage_temp", comment: "") + String(Int(avarageTemp)) + "°C"
     }
     
     var presssure: String {
-        return "Pressure: " + String(weatherItem.pressure)
+        return NSLocalizedString("pressure", comment: "") + String(weatherItem.pressure)
     }
     
     var humidity: String {
-        return "Humidity: " + String(weatherItem.humidity)
+        return NSLocalizedString("humidity", comment: "") + String(weatherItem.humidity)
     }
     
     var description: String {
-        return "Description: " + weatherItem.weather[0].weatherDescription
+        return NSLocalizedString("description", comment: "") + weatherItem.weather[0].weatherDescription
     }
     
     public func configure(_ view: WeatherTableViewCell) {

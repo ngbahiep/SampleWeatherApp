@@ -20,6 +20,7 @@
 		2D15B10724913EA500AB8DEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D15B10524913EA500AB8DEA /* LaunchScreen.storyboard */; };
 		2D15B11224913EA500AB8DEA /* SampleWeatherAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D15B11124913EA500AB8DEA /* SampleWeatherAppTests.swift */; };
 		2D15B11D24913EA500AB8DEA /* SampleWeatherAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D15B11C24913EA500AB8DEA /* SampleWeatherAppUITests.swift */; };
+		2DCCE6032494A54800421745 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2DCCE6052494A54800421745 /* Localizable.strings */; };
 		2DFE1B8F24947BA400ACAFF9 /* ProgressorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFE1B7A24947BA400ACAFF9 /* ProgressorType.swift */; };
 		2DFE1B9024947BA400ACAFF9 /* Prog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFE1B7B24947BA400ACAFF9 /* Prog.swift */; };
 		2DFE1B9124947BA400ACAFF9 /* ProgressorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFE1B7C24947BA400ACAFF9 /* ProgressorView.swift */; };
@@ -137,6 +138,7 @@
 		2D15B11824913EA500AB8DEA /* SampleWeatherAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleWeatherAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D15B11C24913EA500AB8DEA /* SampleWeatherAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleWeatherAppUITests.swift; sourceTree = "<group>"; };
 		2D15B11E24913EA500AB8DEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DCCE6042494A54800421745 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2DFE1B7A24947BA400ACAFF9 /* ProgressorType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressorType.swift; sourceTree = "<group>"; };
 		2DFE1B7B24947BA400ACAFF9 /* Prog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prog.swift; sourceTree = "<group>"; };
 		2DFE1B7C24947BA400ACAFF9 /* ProgressorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressorView.swift; sourceTree = "<group>"; };
@@ -262,6 +264,7 @@
 				2D15B10324913EA500AB8DEA /* Assets.xcassets */,
 				2D15B10524913EA500AB8DEA /* LaunchScreen.storyboard */,
 				2D15B10824913EA500AB8DEA /* Info.plist */,
+				2DCCE6052494A54800421745 /* Localizable.strings */,
 			);
 			path = SampleWeatherApp;
 			sourceTree = "<group>";
@@ -511,6 +514,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D15B10724913EA500AB8DEA /* LaunchScreen.storyboard in Resources */,
+				2DCCE6032494A54800421745 /* Localizable.strings in Resources */,
 				2D15B10424913EA500AB8DEA /* Assets.xcassets in Resources */,
 				2D15B10224913EA300AB8DEA /* Main.storyboard in Resources */,
 			);
@@ -608,6 +612,14 @@
 				2D15B10624913EA500AB8DEA /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		2DCCE6052494A54800421745 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2DCCE6042494A54800421745 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

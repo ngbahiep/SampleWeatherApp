@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  SampleWeatherApp
+
+  Created by Hiep Nguyen on 13/06/2020.
+  Copyright © 2020 Hiep Nguyen. All rights reserved.
+*/
+
+"app_name" = "Weather Forcase";
+"date" = "Date: ";
+"avarage_temp" = "Avarage Temperature: ";
+"pressure" = "Pressure: ";
+"humidity" = "Humidity: ";
+"description" = "Description: ";
