@@ -20,6 +20,22 @@
 		2D15B10724913EA500AB8DEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D15B10524913EA500AB8DEA /* LaunchScreen.storyboard */; };
 		2D15B11224913EA500AB8DEA /* SampleWeatherAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D15B11124913EA500AB8DEA /* SampleWeatherAppTests.swift */; };
 		2D15B11D24913EA500AB8DEA /* SampleWeatherAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D15B11C24913EA500AB8DEA /* SampleWeatherAppUITests.swift */; };
+		2DFE1B8F24947BA400ACAFF9 /* ProgressorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFE1B7A24947BA400ACAFF9 /* ProgressorType.swift */; };
+		2DFE1B9024947BA400ACAFF9 /* Prog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFE1B7B24947BA400ACAFF9 /* Prog.swift */; };
+		2DFE1B9124947BA400ACAFF9 /* ProgressorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFE1B7C24947BA400ACAFF9 /* ProgressorView.swift */; };
+		2DFE1B9324947BA400ACAFF9 /* Progressor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFE1B7E24947BA400ACAFF9 /* Progressor.swift */; };
+		2DFE1B9424947BA400ACAFF9 /* ProgressParent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFE1B7F24947BA400ACAFF9 /* ProgressParent.swift */; };
+		2DFE1B9524947BA400ACAFF9 /* UIView+ProgressParents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFE1B8124947BA400ACAFF9 /* UIView+ProgressParents.swift */; };
+		2DFE1B9624947BA400ACAFF9 /* UIViewController+ProgressParents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFE1B8224947BA400ACAFF9 /* UIViewController+ProgressParents.swift */; };
+		2DFE1B9724947BA400ACAFF9 /* Prog+Internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFE1B8324947BA400ACAFF9 /* Prog+Internal.swift */; };
+		2DFE1B9824947BA400ACAFF9 /* RingProgressorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFE1B8524947BA400ACAFF9 /* RingProgressorView.swift */; };
+		2DFE1B9924947BA400ACAFF9 /* DismissableProgressorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFE1B8624947BA400ACAFF9 /* DismissableProgressorView.swift */; };
+		2DFE1B9A24947BA400ACAFF9 /* BlurProgressorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFE1B8724947BA400ACAFF9 /* BlurProgressorView.swift */; };
+		2DFE1B9B24947BA400ACAFF9 /* ActivityIndicatorProgressorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFE1B8824947BA400ACAFF9 /* ActivityIndicatorProgressorView.swift */; };
+		2DFE1B9C24947BA400ACAFF9 /* LabelProgressorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFE1B8924947BA400ACAFF9 /* LabelProgressorView.swift */; };
+		2DFE1B9D24947BA400ACAFF9 /* ColorProgressorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFE1B8A24947BA400ACAFF9 /* ColorProgressorView.swift */; };
+		2DFE1B9E24947BA400ACAFF9 /* ProgressorCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFE1B8B24947BA400ACAFF9 /* ProgressorCollection.swift */; };
+		2DFE1B9F24947BA400ACAFF9 /* BarProgressorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFE1B8C24947BA400ACAFF9 /* BarProgressorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +137,22 @@
 		2D15B11824913EA500AB8DEA /* SampleWeatherAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleWeatherAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D15B11C24913EA500AB8DEA /* SampleWeatherAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleWeatherAppUITests.swift; sourceTree = "<group>"; };
 		2D15B11E24913EA500AB8DEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DFE1B7A24947BA400ACAFF9 /* ProgressorType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressorType.swift; sourceTree = "<group>"; };
+		2DFE1B7B24947BA400ACAFF9 /* Prog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prog.swift; sourceTree = "<group>"; };
+		2DFE1B7C24947BA400ACAFF9 /* ProgressorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressorView.swift; sourceTree = "<group>"; };
+		2DFE1B7E24947BA400ACAFF9 /* Progressor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Progressor.swift; sourceTree = "<group>"; };
+		2DFE1B7F24947BA400ACAFF9 /* ProgressParent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressParent.swift; sourceTree = "<group>"; };
+		2DFE1B8124947BA400ACAFF9 /* UIView+ProgressParents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+ProgressParents.swift"; sourceTree = "<group>"; };
+		2DFE1B8224947BA400ACAFF9 /* UIViewController+ProgressParents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+ProgressParents.swift"; sourceTree = "<group>"; };
+		2DFE1B8324947BA400ACAFF9 /* Prog+Internal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Prog+Internal.swift"; sourceTree = "<group>"; };
+		2DFE1B8524947BA400ACAFF9 /* RingProgressorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RingProgressorView.swift; sourceTree = "<group>"; };
+		2DFE1B8624947BA400ACAFF9 /* DismissableProgressorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DismissableProgressorView.swift; sourceTree = "<group>"; };
+		2DFE1B8724947BA400ACAFF9 /* BlurProgressorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurProgressorView.swift; sourceTree = "<group>"; };
+		2DFE1B8824947BA400ACAFF9 /* ActivityIndicatorProgressorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorProgressorView.swift; sourceTree = "<group>"; };
+		2DFE1B8924947BA400ACAFF9 /* LabelProgressorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelProgressorView.swift; sourceTree = "<group>"; };
+		2DFE1B8A24947BA400ACAFF9 /* ColorProgressorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorProgressorView.swift; sourceTree = "<group>"; };
+		2DFE1B8B24947BA400ACAFF9 /* ProgressorCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressorCollection.swift; sourceTree = "<group>"; };
+		2DFE1B8C24947BA400ACAFF9 /* BarProgressorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarProgressorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +251,7 @@
 		2D15B0F924913EA300AB8DEA /* SampleWeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				2DFE1B7024947B8B00ACAFF9 /* ThirdParty */,
 				2D0034D7249286FA00A541F5 /* Model */,
 				2D0034D6249286EA00A541F5 /* ViewModel */,
 				2D0034D5249286E100A541F5 /* View */,
@@ -249,6 +282,69 @@
 				2D15B11E24913EA500AB8DEA /* Info.plist */,
 			);
 			path = SampleWeatherAppUITests;
+			sourceTree = "<group>";
+		};
+		2DFE1B7024947B8B00ACAFF9 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				2DFE1B7824947BA400ACAFF9 /* Progress */,
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		2DFE1B7824947BA400ACAFF9 /* Progress */ = {
+			isa = PBXGroup;
+			children = (
+				2DFE1B7924947BA400ACAFF9 /* Classes */,
+				2DFE1B8D24947BA400ACAFF9 /* Assets */,
+			);
+			path = Progress;
+			sourceTree = "<group>";
+		};
+		2DFE1B7924947BA400ACAFF9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2DFE1B7A24947BA400ACAFF9 /* ProgressorType.swift */,
+				2DFE1B7B24947BA400ACAFF9 /* Prog.swift */,
+				2DFE1B7C24947BA400ACAFF9 /* ProgressorView.swift */,
+				2DFE1B7E24947BA400ACAFF9 /* Progressor.swift */,
+				2DFE1B7F24947BA400ACAFF9 /* ProgressParent.swift */,
+				2DFE1B8024947BA400ACAFF9 /* ProgressParents */,
+				2DFE1B8324947BA400ACAFF9 /* Prog+Internal.swift */,
+				2DFE1B8424947BA400ACAFF9 /* Progressors */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		2DFE1B8024947BA400ACAFF9 /* ProgressParents */ = {
+			isa = PBXGroup;
+			children = (
+				2DFE1B8124947BA400ACAFF9 /* UIView+ProgressParents.swift */,
+				2DFE1B8224947BA400ACAFF9 /* UIViewController+ProgressParents.swift */,
+			);
+			path = ProgressParents;
+			sourceTree = "<group>";
+		};
+		2DFE1B8424947BA400ACAFF9 /* Progressors */ = {
+			isa = PBXGroup;
+			children = (
+				2DFE1B8524947BA400ACAFF9 /* RingProgressorView.swift */,
+				2DFE1B8624947BA400ACAFF9 /* DismissableProgressorView.swift */,
+				2DFE1B8724947BA400ACAFF9 /* BlurProgressorView.swift */,
+				2DFE1B8824947BA400ACAFF9 /* ActivityIndicatorProgressorView.swift */,
+				2DFE1B8924947BA400ACAFF9 /* LabelProgressorView.swift */,
+				2DFE1B8A24947BA400ACAFF9 /* ColorProgressorView.swift */,
+				2DFE1B8B24947BA400ACAFF9 /* ProgressorCollection.swift */,
+				2DFE1B8C24947BA400ACAFF9 /* BarProgressorView.swift */,
+			);
+			path = Progressors;
+			sourceTree = "<group>";
+		};
+		2DFE1B8D24947BA400ACAFF9 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -441,10 +537,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DFE1B9D24947BA400ACAFF9 /* ColorProgressorView.swift in Sources */,
 				2D0034D92492874100A541F5 /* WeatherTableViewCell.swift in Sources */,
+				2DFE1B9524947BA400ACAFF9 /* UIView+ProgressParents.swift in Sources */,
+				2DFE1B9124947BA400ACAFF9 /* ProgressorView.swift in Sources */,
+				2DFE1B9624947BA400ACAFF9 /* UIViewController+ProgressParents.swift in Sources */,
+				2DFE1B9424947BA400ACAFF9 /* ProgressParent.swift in Sources */,
+				2DFE1B9F24947BA400ACAFF9 /* BarProgressorView.swift in Sources */,
 				2D0034FC2492A73900A541F5 /* WeatherViewModel.swift in Sources */,
+				2DFE1B8F24947BA400ACAFF9 /* ProgressorType.swift in Sources */,
 				2D15B0FF24913EA300AB8DEA /* ViewController.swift in Sources */,
+				2DFE1B9824947BA400ACAFF9 /* RingProgressorView.swift in Sources */,
+				2DFE1B9E24947BA400ACAFF9 /* ProgressorCollection.swift in Sources */,
 				2D15B0FB24913EA300AB8DEA /* AppDelegate.swift in Sources */,
+				2DFE1B9024947BA400ACAFF9 /* Prog.swift in Sources */,
+				2DFE1B9A24947BA400ACAFF9 /* BlurProgressorView.swift in Sources */,
+				2DFE1B9C24947BA400ACAFF9 /* LabelProgressorView.swift in Sources */,
+				2DFE1B9924947BA400ACAFF9 /* DismissableProgressorView.swift in Sources */,
+				2DFE1B9B24947BA400ACAFF9 /* ActivityIndicatorProgressorView.swift in Sources */,
+				2DFE1B9724947BA400ACAFF9 /* Prog+Internal.swift in Sources */,
+				2DFE1B9324947BA400ACAFF9 /* Progressor.swift in Sources */,
 				2D15B0FD24913EA300AB8DEA /* SceneDelegate.swift in Sources */,
 				2D0034FA24929EC600A541F5 /* Weather.swift in Sources */,
 			);
