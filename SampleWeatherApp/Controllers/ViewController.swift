@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     let APP_ID = "60c6fbeb4b93ac653c492ba806fc346d"
     let UNITS = "metric"
     let DEFAULT_COUNT = "7"
+    let BASE_URL = "https://api.openweathermap.org/data/2.5/forecast/daily"
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -21,6 +22,7 @@ class ViewController: UIViewController {
     
     var weather: Weather?
     var request: Request?
+    var timer: Timer?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,37 +49,30 @@ class ViewController: UIViewController {
         if NetworkReachabilityManager()?.isReachable ?? false {
             print("Got internet connection")
             
-            let strUrl = "https://api.openweathermap.org/data/2.5/forecast/daily?q=\(city)&cnt=\(DEFAULT_COUNT)&appid=\(APP_ID)&units=\(UNITS)"
-            
-            print("strURL: \(strUrl)")
-            
-            guard let url = URL(string: strUrl) else { return }
-            var req = URLRequest(url: url)
-            req.cachePolicy = NSURLRequest.CachePolicy.useProtocolCachePolicy
-            
             // Cancel previous request
             if let request = request {
                 request.cancel()
             }
             
-            request = AF.request(req)
+            let parameters = ["q": city, "cnt": DEFAULT_COUNT, "appid": APP_ID, "units": UNITS]
+            request = AF.request(BASE_URL, parameters: parameters)
                 .validate()
                 .responseDecodable( of: Weather.self) { response in
-                
-                print(response.description)
-                
-                if (nil != response.error) {
-                    print("ERROR: \(String(describing: response.error))")
-                    completion(nil)
-                    return
-                }
-                
-                guard let weather = response.value else {
-                    completion(nil)
-                    return
-                }
                     
-                completion(weather)
+                    if (nil != response.error) {
+                        print("ERROR: \(String(describing: response.error))")
+                        completion(nil)
+                        return
+                    }
+                    
+                    guard let weather = response.value else {
+                        completion(nil)
+                        return
+                    }
+                    
+                    debugPrint(response)
+                    
+                    completion(weather)
             }
             
         } else {
@@ -108,22 +103,31 @@ extension ViewController: UITableViewDataSource {
 
 extension ViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
-        guard let strSearch = searchController.searchBar.text else {
-            return
+        
+        if let timer = timer {
+            // Invalidate previous timer
+            timer.invalidate()
         }
         
+        guard let strSearch = searchController.searchBar.text else { return }
+        
         if strSearch.count >= 3 {
-            // start progress
-            Prog.start(in: self.tableView, .activityIndicator)
             
-            searchWeather(city: strSearch) { (weather) in
-                print("Reload data ...")
-                self.weather = weather
-                self.tableView.reloadData()
+            timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: false, block: { timer in
+                print("Start requesting weather information ...")
                 
-                // dismiss progress
-                Prog.dismiss(in: self.tableView)
-            }   
+                // start progress
+                Prog.start(in: self.tableView, .activityIndicator)
+                
+                self.searchWeather(city: strSearch) { (weather) in
+                    print("Reload data ...")
+                    self.weather = weather
+                    self.tableView.reloadData()
+                    
+                    // dismiss progress
+                    Prog.dismiss(in: self.tableView)
+                }
+            })
         }
     }
 }
