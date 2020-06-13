@@ -24,13 +24,14 @@ class ViewController: UIViewController {
         // configure UISearchController
         searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false
+        searchController.searchBar.accessibilityIdentifier = "searchBar"
+        searchController.searchBar.isAccessibilityElement = true
         
         // Add search controller to navigation item
         navigationItem.searchController = searchController
         
         // configure UITableView
         tableView.dataSource = self
-        tableView.delegate = self
     }
     
     func searchWeather(city: String, completion: @escaping (Weather?) -> Void) {
@@ -79,10 +80,6 @@ class ViewController: UIViewController {
         }
     }
 
-}
-
-extension ViewController: UITableViewDelegate {
-    
 }
 
 extension ViewController: UITableViewDataSource {

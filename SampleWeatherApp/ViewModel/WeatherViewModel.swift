@@ -20,7 +20,7 @@ public class WeatherViewModel {
         let date = Date(timeIntervalSince1970: TimeInterval(weatherItem.dt))
         let dateFormatter = DateFormatter()
         dateFormatter.locale = NSLocale.current
-        dateFormatter.dateFormat = "EEE, dd MMM yyyy" //Specify your format that you want
+        dateFormatter.dateFormat = "EEE, dd MMM yyyy"
         return "Date: " + dateFormatter.string(from: date)
     }
     
