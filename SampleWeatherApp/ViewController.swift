@@ -29,7 +29,7 @@ class ViewController: UIViewController {
         searchController.searchBar.accessibilityIdentifier = "searchBar"
         searchController.searchBar.isAccessibilityElement = true
         searchController.searchBar.accessibilityTraits = .searchField
-        searchController.searchBar.accessibilityLabel = "Search"
+        searchController.searchBar.accessibilityLabel = NSLocalizedString("search", comment: "")
         
         // Add search controller to navigation item
         navigationItem.searchController = searchController
@@ -51,7 +51,7 @@ class ViewController: UIViewController {
             var req = URLRequest(url: url)
             req.cachePolicy = NSURLRequest.CachePolicy.useProtocolCachePolicy
             
-            // Invalidate previous request
+            // Cancel previous request
             if let request = request {
                 request.cancel()
             }
@@ -74,9 +74,6 @@ class ViewController: UIViewController {
                 }
                     
                 completion(weather)
-                
-                print(weather)
-                
             }
             
         } else {
