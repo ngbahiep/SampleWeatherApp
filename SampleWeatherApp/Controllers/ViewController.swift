@@ -11,6 +11,10 @@ import Alamofire
 
 class ViewController: UIViewController {
     
+    let APP_ID = "60c6fbeb4b93ac653c492ba806fc346d"
+    let UNITS = "metric"
+    let DEFAULT_COUNT = "7"
+    
     @IBOutlet weak var tableView: UITableView!
     
     let searchController = UISearchController(searchResultsController: nil)
@@ -43,7 +47,7 @@ class ViewController: UIViewController {
         if NetworkReachabilityManager()?.isReachable ?? false {
             print("Got internet connection")
             
-            let strUrl = "https://api.openweathermap.org/data/2.5/forecast/daily?q=\(city)&cnt=7&appid=60c6fbeb4b93ac653c492ba806fc346d&units=metric"
+            let strUrl = "https://api.openweathermap.org/data/2.5/forecast/daily?q=\(city)&cnt=\(DEFAULT_COUNT)&appid=\(APP_ID)&units=\(UNITS)"
             
             print("strURL: \(strUrl)")
             
