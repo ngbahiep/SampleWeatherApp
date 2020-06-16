@@ -14,9 +14,9 @@ class Weather: Codable {
     let cod: String
     let message: Double
     let cnt: Int
-    let list: [List]
+    let list: [WeatherItem]
 
-    init(city: City, cod: String, message: Double, cnt: Int, list: [List]) {
+    init(city: City, cod: String, message: Double, cnt: Int, list: [WeatherItem]) {
         self.city = city
         self.cod = cod
         self.message = message
@@ -54,7 +54,7 @@ class Coord: Codable {
 }
 
 // MARK: - List
-public class List: Codable {
+public class WeatherItem: Codable {
     let dt, sunrise, sunset: Int
     let temp: Temp
     let feelsLike: FeelsLike

@@ -10,9 +10,9 @@ import Foundation
 
 public class WeatherViewModel {
     
-    private let weatherItem: List
+    private let weatherItem: WeatherItem
     
-    public init(_ weatherItem: List) {
+    public init(_ weatherItem: WeatherItem) {
         self.weatherItem = weatherItem
     }
     
