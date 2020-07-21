@@ -35,15 +35,3 @@ cd SampleWeatherApp
 git submodule add https://github.com/Alamofire/Alamofire.git
 ```
 - Open SampleWeatherApp.xcodeproj and run the project
-
-## Check list of items the candidate has done.
-I have done all the requirements of Problem Statement:
-- Programming language: Swift
-- Design app's architecture: MVVM
-- UI looks like in attachment.
-- Write Unit Tests
-- Acceptance Tests
-- Exception handling
-- Caching handling
-- Accessibility for Disability Supports: Voice over and scaling text.
-- Read me
